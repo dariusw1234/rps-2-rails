@@ -1,0 +1,35 @@
+<nav>
+  <ul>
+    <li>
+      <a href="/rock">
+        Play Rock
+      </a>
+    </li>
+
+    <li>
+      <a href="/paper">
+        Play Paper
+      </a>
+    </li>
+
+    <li>
+      <a href="/scissors">
+        Play Scissors
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<h2>We played scissors!<h2>
+
+<h2>They played <%= @pc_play %>!</h2>
+
+<% if @pc_play == "paper" %>
+  <h2>We won!</h2>
+<% elsif @pc_play == "scissors" %>
+  <h2>We tied!</h2>
+<% elsif @pc_play == "rock" %>
+  <h2>We lost!</h2>
+<% end %>
+
+<a href="/">Rules</a>
